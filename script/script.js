@@ -1,4 +1,4 @@
-//Varibalen zuweisen ------------------------------------------------
+//Set variables ------------------------------------------------
 var box1 = document.getElementById("1");
 var box2 = document.getElementById("2");
 var box3 = document.getElementById("3");
@@ -22,7 +22,6 @@ var P2 = "Player 2";
 
 restart.addEventListener("click", clear);
 
-
 //Adding Eventlistener ---------------------------------------------
 function TicTacToe() {
   document.getElementById("playersturn").innerText = "Player turn:";
@@ -37,7 +36,6 @@ function TicTacToe() {
   box8.addEventListener("click", clickBox);
   box9.addEventListener("click", clickBox);
 }
-
 
 //Remove Eventlistener if box contains something
 const boxes = [box1, box2, box3, box4, box5, box6, box7, box8, box9];
@@ -98,7 +96,6 @@ function checkWin() {
       return cellA === x ? "1" : "2";
     }
   }
-
   return null;
 }
 
